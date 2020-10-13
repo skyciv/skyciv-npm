@@ -1,6 +1,6 @@
 {
   "name": "skyciv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simplified way to call the SkyCiv api.",
   "main": "index.js",
   "directories": {
