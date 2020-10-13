@@ -1,0 +1,30 @@
+{
+  "name": "skyciv",
+  "version": "1.0.0",
+  "description": "A simplified way to call the SkyCiv api.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyciv/skyciv-npm.git"
+  },
+  "keywords": [
+    "structural",
+    "analysis",
+    "api",
+    "skyciv",
+    "finite",
+    "element"
+  ],
+  "author": "steve.richardson@skyciv.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skyciv/skyciv-npm/issues"
+  },
+  "homepage": "https://github.com/skyciv/skyciv-npm#readme"
+}
