@@ -1,13 +1,14 @@
 {
 	"name": "skyciv",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "A simplified way to call the SkyCiv api.",
 	"main": "index.js",
 	"directories": {
 		"test": "test"
 	},
 	"scripts": {
-		"test": "test"
+		"test": "test",
+		"generate-docs": "jsdoc --configure jsdoc.json --verbose"
 	},
 	"repository": {
 		"type": "git",
@@ -27,5 +28,8 @@
 	"bugs": {
 		"url": "https://github.com/skyciv/skyciv-npm/issues"
 	},
-	"homepage": "https://github.com/skyciv/skyciv-npm"
+	"homepage": "https://github.com/skyciv/skyciv-npm",
+	"dependencies": {
+		"jsdoc": "^3.6.6"
+	}
 }

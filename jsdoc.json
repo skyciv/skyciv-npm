@@ -1,0 +1,27 @@
+{
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc"]
+	},
+	"source": {
+		"include": ["lib", "classes", "package.json", "README.md"],
+		"includePattern": ".js$",
+		"excludePattern": "(node_modules/|docs)"
+	},
+	"plugins": ["plugins/markdown"],
+	"templates": {
+		"referenceTitle": "SkyCiv NPM Package",
+		"disableSort": false,
+		"collapse": true,
+		"resources": {
+			"SkyCiv API Docs": "https://www.skyciv.com/api/v3"
+		}
+	},
+	"opts": {
+		"destination": "./docs/",
+		"encoding": "utf8",
+		"private": true,
+		"recurse": true,
+		"template": "./jsdoc-template"
+	}
+}

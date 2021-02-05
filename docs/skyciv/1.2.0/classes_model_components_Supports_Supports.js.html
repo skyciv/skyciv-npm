@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      classes/model/components/Supports/Supports.js - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+  <link type="text/css" rel="stylesheet" href="styles/collapse.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      SkyCiv NPM Package
+    </h3>
+
+    
+      <h3>
+        Resources
+      </h3>
+      
+        <a href="https://www.skyciv.com/api/v3">SkyCiv API Docs</a>
+      
+    
+
+    <h3>Classes</h3><ul><li id="ApiFunction-nav"><a href="ApiFunction.html">ApiFunction</a></li><li id="ApiFunctions-nav"><a href="ApiFunctions.html">ApiFunctions</a><ul class='methods'><li data-type="method" id="ApiFunctions-add-nav"><a href="ApiFunctions.html#.add">add</a></li><li data-type="method" id="ApiFunctions-get-nav"><a href="ApiFunctions.html#.get">get</a></li><li data-type="method" id="ApiFunctions-remove-nav"><a href="ApiFunctions.html#.remove">remove</a></li><li data-type="method" id="ApiFunctions-removeAll-nav"><a href="ApiFunctions.html#.removeAll">removeAll</a></li></ul></li><li id="ApiObject-nav"><a href="ApiObject.html">ApiObject</a><ul class='methods'><li data-type="method" id="ApiObject-get-nav"><a href="ApiObject.html#.get">get</a></li><li data-type="method" id="ApiObject-request-nav"><a href="ApiObject.html#request">request</a></li></ul></li><li id="AreaLoad-nav"><a href="AreaLoad.html">AreaLoad</a></li><li id="AreaLoads-nav"><a href="AreaLoads.html">AreaLoads</a><ul class='methods'><li data-type="method" id="AreaLoads-add-nav"><a href="AreaLoads.html#.add">add</a></li><li data-type="method" id="AreaLoads-getAreaLoadIdsFromNodesIds-nav"><a href="AreaLoads.html#.getAreaLoadIdsFromNodesIds">getAreaLoadIdsFromNodesIds</a></li><li data-type="method" id="AreaLoads-set-nav"><a href="AreaLoads.html#.set">set</a></li></ul></li><li id="AuthObject-nav"><a href="AuthObject.html">AuthObject</a></li><li id="DistributedLoad-nav"><a href="DistributedLoad.html">DistributedLoad</a></li><li id="DistributedLoads-nav"><a href="DistributedLoads.html">DistributedLoads</a><ul class='methods'><li data-type="method" id="DistributedLoads-add-nav"><a href="DistributedLoads.html#.add">add</a></li><li data-type="method" id="DistributedLoads-idFromMemberId-nav"><a href="DistributedLoads.html#.idFromMemberId">idFromMemberId</a></li><li data-type="method" id="DistributedLoads-set-nav"><a href="DistributedLoads.html#.set">set</a></li></ul></li><li id="LoadCombination-nav"><a href="LoadCombination.html">LoadCombination</a><ul class='methods'><li data-type="method" id="LoadCombination-set-nav"><a href="LoadCombination.html#.set">set</a></li></ul></li><li id="LoadCombinations-nav"><a href="LoadCombinations.html">LoadCombinations</a><ul class='methods'><li data-type="method" id="LoadCombinations-add-nav"><a href="LoadCombinations.html#.add">add</a></li><li data-type="method" id="LoadCombinations-set-nav"><a href="LoadCombinations.html#.set">set</a></li></ul></li><li id="Material-nav"><a href="Material.html">Material</a></li><li id="Materials-nav"><a href="Materials.html">Materials</a><ul class='methods'><li data-type="method" id="Materials-add-nav"><a href="Materials.html#.add">add</a></li><li data-type="method" id="Materials-addCustom-nav"><a href="Materials.html#.addCustom">addCustom</a></li><li data-type="method" id="Materials-set-nav"><a href="Materials.html#.set">set</a></li></ul></li><li id="Member-nav"><a href="Member.html">Member</a></li><li id="Members-nav"><a href="Members.html">Members</a><ul class='methods'><li data-type="method" id="Members-add-nav"><a href="Members.html#.add">add</a></li><li data-type="method" id="Members-getMemberIdsFromNodesIds-nav"><a href="Members.html#.getMemberIdsFromNodesIds">getMemberIdsFromNodesIds</a></li><li data-type="method" id="Members-set-nav"><a href="Members.html#.set">set</a></li></ul></li><li id="MeshedPlate-nav"><a href="MeshedPlate.html">MeshedPlate</a></li><li id="MeshedPlates-nav"><a href="MeshedPlates.html">MeshedPlates</a><ul class='methods'><li data-type="method" id="MeshedPlates-add-nav"><a href="MeshedPlates.html#.add">add</a></li><li data-type="method" id="MeshedPlates-getMeshedPlateIdsFromNodesIds-nav"><a href="MeshedPlates.html#.getMeshedPlateIdsFromNodesIds">getMeshedPlateIdsFromNodesIds</a></li><li data-type="method" id="MeshedPlates-set-nav"><a href="MeshedPlates.html#.set">set</a></li></ul></li><li id="Model-nav"><a href="Model.html">Model</a><ul class='methods'><li data-type="method" id="Model-get-nav"><a href="Model.html#.get">get</a></li><li data-type="method" id="Model-set-nav"><a href="Model.html#.set">set</a></li></ul></li><li id="ModelCollectionComponent-nav"><a href="ModelCollectionComponent.html">ModelCollectionComponent</a><ul class='methods'><li data-type="method" id="ModelCollectionComponent-clear-nav"><a href="ModelCollectionComponent.html#.clear">clear</a></li><li data-type="method" id="ModelCollectionComponent-clearAll-nav"><a href="ModelCollectionComponent.html#.clearAll">clearAll</a></li><li data-type="method" id="ModelCollectionComponent-exists-nav"><a href="ModelCollectionComponent.html#.exists">exists</a></li><li data-type="method" id="ModelCollectionComponent-get-nav"><a href="ModelCollectionComponent.html#.get">get</a></li><li data-type="method" id="ModelCollectionComponent-length-nav"><a href="ModelCollectionComponent.html#.length">length</a></li></ul></li><li id="Moment-nav"><a href="Moment.html">Moment</a></li><li id="Moments-nav"><a href="Moments.html">Moments</a><ul class='methods'><li data-type="method" id="Moments-add-nav"><a href="Moments.html#.add">add</a></li><li data-type="method" id="Moments-idFromElementId-nav"><a href="Moments.html#.idFromElementId">idFromElementId</a></li><li data-type="method" id="Moments-set-nav"><a href="Moments.html#.set">set</a></li><li data-type="method" id="Moments-verify-nav"><a href="Moments.html#.verify">verify</a></li></ul></li><li id="Node-nav"><a href="Node.html">Node</a></li><li id="Nodes-nav"><a href="Nodes.html">Nodes</a><ul class='methods'><li data-type="method" id="Nodes-add-nav"><a href="Nodes.html#.add">add</a></li><li data-type="method" id="Nodes-idFromCoords-nav"><a href="Nodes.html#.idFromCoords">idFromCoords</a></li><li data-type="method" id="Nodes-set-nav"><a href="Nodes.html#.set">set</a></li></ul></li><li id="OptionsObject-nav"><a href="OptionsObject.html">OptionsObject</a></li><li id="Plate-nav"><a href="Plate.html">Plate</a></li><li id="Plates-nav"><a href="Plates.html">Plates</a><ul class='methods'><li data-type="method" id="Plates-add-nav"><a href="Plates.html#.add">add</a></li><li data-type="method" id="Plates-getPlateIdsFromNodesIds-nav"><a href="Plates.html#.getPlateIdsFromNodesIds">getPlateIdsFromNodesIds</a></li><li data-type="method" id="Plates-set-nav"><a href="Plates.html#.set">set</a></li></ul></li><li id="PointLoad-nav"><a href="PointLoad.html">PointLoad</a></li><li id="PointLoads-nav"><a href="PointLoads.html">PointLoads</a><ul class='methods'><li data-type="method" id="PointLoads-add-nav"><a href="PointLoads.html#.add">add</a></li><li data-type="method" id="PointLoads-idFromElementId-nav"><a href="PointLoads.html#.idFromElementId">idFromElementId</a></li><li data-type="method" id="PointLoads-set-nav"><a href="PointLoads.html#.set">set</a></li><li data-type="method" id="PointLoads-verify-nav"><a href="PointLoads.html#.verify">verify</a></li></ul></li><li id="Pressure-nav"><a href="Pressure.html">Pressure</a></li><li id="Pressures-nav"><a href="Pressures.html">Pressures</a><ul class='methods'><li data-type="method" id="Pressures-add-nav"><a href="Pressures.html#.add">add</a></li><li data-type="method" id="Pressures-idFromPlateId-nav"><a href="Pressures.html#.idFromPlateId">idFromPlateId</a></li><li data-type="method" id="Pressures-set-nav"><a href="Pressures.html#.set">set</a></li></ul></li><li id="Section-nav"><a href="Section.html">Section</a><ul class='methods'><li data-type="method" id="Section-clearSelf-nav"><a href="Section.html#.clearSelf">clearSelf</a></li><li data-type="method" id="Section-loadCustom-nav"><a href="Section.html#.loadCustom">loadCustom</a></li><li data-type="method" id="Section-loadSection-nav"><a href="Section.html#.loadSection">loadSection</a></li></ul></li><li id="Sections-nav"><a href="Sections.html">Sections</a><ul class='methods'><li data-type="method" id="Sections-addCustomSection-nav"><a href="Sections.html#.addCustomSection">addCustomSection</a></li><li data-type="method" id="Sections-addLibrarySection-nav"><a href="Sections.html#.addLibrarySection">addLibrarySection</a></li><li data-type="method" id="Sections-idsFromPath-nav"><a href="Sections.html#.idsFromPath">idsFromPath</a></li></ul></li><li id="SelfWeight-nav"><a href="SelfWeight.html">SelfWeight</a></li><li id="Settings-nav"><a href="Settings.html">Settings</a><ul class='methods'><li data-type="method" id="Settings-set-nav"><a href="Settings.html#.set">set</a></li></ul></li><li id="Settlement-nav"><a href="Settlement.html">Settlement</a></li><li id="Settlements-nav"><a href="Settlements.html">Settlements</a><ul class='methods'><li data-type="method" id="Settlements-add-nav"><a href="Settlements.html#.add">add</a></li><li data-type="method" id="Settlements-idFromNodeId-nav"><a href="Settlements.html#.idFromNodeId">idFromNodeId</a></li><li data-type="method" id="Settlements-set-nav"><a href="Settlements.html#.set">set</a></li></ul></li><li id="Support-nav"><a href="Support.html">Support</a></li><li id="Supports-nav"><a href="Supports.html">Supports</a><ul class='methods'><li data-type="method" id="Supports-add-nav"><a href="Supports.html#.add">add</a></li><li data-type="method" id="Supports-idFromNodeId-nav"><a href="Supports.html#.idFromNodeId">idFromNodeId</a></li><li data-type="method" id="Supports-set-nav"><a href="Supports.html#.set">set</a></li></ul></li><li id="Units-nav"><a href="Units.html">Units</a><ul class='methods'><li data-type="method" id="Units-set-nav"><a href="Units.html#.set">set</a></li><li data-type="method" id="Units-setDefaultImperial-nav"><a href="Units.html#.setDefaultImperial">setDefaultImperial</a></li><li data-type="method" id="Units-setDefaultMetric-nav"><a href="Units.html#.setDefaultMetric">setDefaultMetric</a></li><li data-type="method" id="Units-setUnitSystem-nav"><a href="Units.html#.setUnitSystem">setUnitSystem</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#request">request</a></li><li><a href="global.html#requestPromise">requestPromise</a></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        classes/model/components/Supports/Supports.js
+      </h1>
+    
+
+    
+      
+
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>const { nextObjectKey } = require('../../../../utils/helpers');
+const ModelCollectionComponent = require('../_Templates/ModelCollectionComponent');
+const Support = require('./Support');
+
+class Supports extends ModelCollectionComponent {
+	/**
+	 * @description Creates an instance of the SkyCiv Supports class.
+	 * @extends ModelCollectionComponent
+	 */
+	constructor() {
+		super();
+	}
+
+	/**
+	 * @description Create a support with the next available ID.
+	 * @method add
+	 * @memberof Supports
+	 * @param {number} node The ID of the node at which the support is located.
+	 * @param {string} restraint_code A 6 character restraint code. See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code. Defaults to 'FFFFFF'.
+	 * @param {number} tx Spring stiffness for translation in the x axis. Applies only if the restraint code character for translation in x = S.
+	 * @param {number} ty Spring stiffness for translation in the y axis. Applies only if the restraint code character for translation in y = S.
+	 * @param {number} tz Spring stiffness for translation in the z axis. Applies only if the restraint code character for translation in z= S.
+	 * @param {number} rx Spring stiffness for rotation about the x axis. Applies only if the restraint code character for rotation about x = S.
+	 * @param {number} ry Spring stiffness for rotation about the y axis. Applies only if the restraint code character for rotation about y = S.
+	 * @param {number} rz Spring stiffness for rotation about the z axis. Applies only if the restraint code character for rotation about z = S.
+	 * @returns The ID of the created support.
+	 */
+	add(
+		node,
+		restraint_code = 'FFFFFF',
+		tx = 0,
+		ty = 0,
+		tz = 0,
+		rx = 0,
+		ry = 0,
+		rz = 0
+	) {
+		const nextIndex = nextObjectKey(this);
+		const elementId = this.idFromNodeId(node);
+
+		if (elementId !== null) {
+			console.warn(
+				'Prevented overwriting an existing support with the Supports.add() method. Use Supports.set() instead.'
+			);
+			return elementId;
+		} else {
+			this[nextIndex] = new Support(node, restraint_code, tx, ty, tz, rx, ry, rz);
+			return nextIndex;
+		}
+	}
+
+	/**
+	 * @description OVERWRITES the support with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A SUPPORT.
+	 * @method set
+	 * @memberof Supports
+	 * @param {number} id The ID of the support.
+	 * @param {number} node The ID of the node at which the support is located.
+	 * @param {string} restraint_code A 6 character restraint code. See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code. Defaults to 'FFFFFF'.
+	 * @param {number} tx Spring stiffness for translation in the x axis. Applies only if the restraint code character for translation in x = S.
+	 * @param {number} ty Spring stiffness for translation in the y axis. Applies only if the restraint code character for translation in y = S.
+	 * @param {number} tz Spring stiffness for translation in the z axis. Applies only if the restraint code character for translation in z= S.
+	 * @param {number} rx Spring stiffness for rotation about the x axis. Applies only if the restraint code character for rotation about x = S.
+	 * @param {number} ry Spring stiffness for rotation about the y axis. Applies only if the restraint code character for rotation about y = S.
+	 * @param {number} rz Spring stiffness for rotation about the z axis. Applies only if the restraint code character for rotation about z = S.
+	 * @returns The ID of the created support.
+	 */
+	set(
+		id,
+		node,
+		restraint_code = 'FFFFFF',
+		tx = 0,
+		ty = 0,
+		tz = 0,
+		rx = 0,
+		ry = 0,
+		rz = 0
+	) {
+		// Abort if no args
+		if (!id) return;
+
+		this[id] = new Support(node, restraint_code, tx, ty, tz, rx, ry, rz);
+		return id;
+	}
+
+	/**
+	 * @description Find an supports's ID from the node ID which it is located.
+	 * @method idFromNodeId
+	 * @memberof Supports
+	 * @param {number} node_id The node ID of the support to find.
+	 */
+	idFromNodeId(node_id) {
+		let id = null;
+		Object.entries(this).forEach(([k, v]) => {
+			if (v.node === node_id) {
+				id = k;
+			}
+		});
+		return id;
+	}
+}
+
+
+module.exports = Supports;
+</code></pre>
+  </article>
+</section>
+
+    
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>
