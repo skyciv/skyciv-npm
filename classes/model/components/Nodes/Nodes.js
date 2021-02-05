@@ -25,31 +25,12 @@ class Nodes extends ModelCollectionComponent {
 		const nodeId = this.idFromCoords(x, y, z);
 
 		if (nodeId !== null) {
-			console.warn(
-				'Prevented overwriting an existing node with the Nodes.add() method. Use Nodes.set() instead.'
-			);
+			console.warn('Prevented overwriting an existing node with the Nodes.add() method.');
 			return nodeId;
 		} else {
 			this[nextIndex] = new Node(x, y, z);
 			return nextIndex;
 		}
-	}
-
-	/**
-	 * @description OVERWRITES the node with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A NODE.
-	 * @method set
-	 * @memberof Nodes
-	 * @param {number} id The ID of the node.
-	 * @param {number} x The X coordinate of the new node.
-	 * @param {number} y The Y coordinate of the new node.
-	 * @param {number} z The Z coordinate of the new node.
-	 */
-	set(id, x, y, z) {
-		// Abort if no args
-		if (!id) return;
-
-		this[id] = new Node(x, y, z);
-		return id;
 	}
 
 	/**

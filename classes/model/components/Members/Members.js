@@ -54,32 +54,6 @@ class Members extends ModelCollectionComponent {
 	}
 
 	/**
-	 * @description OVERWRITES the member with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A MEMBER.
-	 * @method set
-	 * @memberof Members
-	 * @param {number} id The ID of the member.
-	 * @param {number} x The X coordinate of the new member.
-	 * @param {number} y The Y coordinate of the new member.
-	 * @param {number} z The Z coordinate of the new member.
-	 */
-	set(
-		id,
-		node_A,
-		node_B,
-		section_id,
-		fixity_A = 'FFFFFF',
-		fixity_B = 'FFFFFF',
-		type = 'normal',
-		cable_length = null
-	) {
-		// Abort if no args
-		if (!id) return;
-
-		this[id] = new Member(node_A, node_B, section_id, fixity_A, fixity_B, type, cable_length);
-		return id;
-	}
-
-	/**
 	 * @description Get the IDs of all members by its end nodes.
 	 * @method getMemberIdsFromNodesIds
 	 * @memberof Members

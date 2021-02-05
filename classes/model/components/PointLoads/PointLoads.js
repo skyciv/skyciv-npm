@@ -33,67 +33,23 @@ class PointLoads extends ModelCollectionComponent {
 		x_mag = 0,
 		y_mag = 0,
 		z_mag = 0,
-		load_group = "LG1"
+		load_group = 'LG1'
 	) {
 		const nextIndex = nextObjectKey(this);
-		const elementId =
-			type === 'n' ? this.idFromElementId(type, node) : this.idFromElementId(type, member);
 
 		this.verify(nextIndex, type, node, member);
 
-		if (elementId !== null) {
-			console.warn(
-				'Prevented overwriting an existing point load with the PointLoads.add() method. Use PointLoads.set() instead.'
-			);
-			return elementId;
-		} else {
-			this[nextIndex] = new PointLoad(
-				type,
-				node,
-				member,
-				position,
-				x_mag,
-				y_mag,
-				z_mag,
-				load_group
-			);
-			return nextIndex;
-		}
-	}
-
-	/**
-	 * @description OVERWRITES the point load with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A POINT LOAD.
-	 * @method set
-	 * @memberof PointLoads
-	 * @param {number} id The ID of the point load.
-	 * @param {"n" | "m"} type The type of object to which the load is applied. node, member.
-	 * @param {number} node The node ID which the point load is located. If type is "m", provide value null.
-	 * @param {number} member The member ID which the point load is located. If type is "n", provide value null.
-	 * @param {number} position The percentage from node_A to node_B of the member which the point load is located. E.g. 10 for 10%.  If type is "n", provide value null.
-	 * @param {number} x_mag The magnitude of the point load force along the x axis.
-	 * @param {number} y_mag The magnitude of the point load force along the y axis.
-	 * @param {number} z_mag The magnitude of the point load force along the z axis.
-	 * @param {number} load_group The load group to which the point load will be grouped.
-	 * @returns The ID of the created point load.
-	 */
-	set(
-		id,
-		type,
-		node = null,
-		member = null,
-		position = null,
-		x_mag = 0,
-		y_mag = 0,
-		z_mag = 0,
-		load_group = "LG1"
-	) {
-		// Abort if no args
-		if (!id) return;
-
-		this.verify(id, type, node, member);
-
-		this[id] = new PointLoad(type, node, member, position, x_mag, y_mag, z_mag, load_group);
-		return id;
+		this[nextIndex] = new PointLoad(
+			type,
+			node,
+			member,
+			position,
+			x_mag,
+			y_mag,
+			z_mag,
+			load_group
+		);
+		return nextIndex;
 	}
 
 	/**

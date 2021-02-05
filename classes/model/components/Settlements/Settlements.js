@@ -26,39 +26,9 @@ class Settlements extends ModelCollectionComponent {
 	 */
 	add(node, tx = null, ty = null, tz = null, rx = null, ry = null, rz = null) {
 		const nextIndex = nextObjectKey(this);
-		const elementId = this.idFromNodeId(node);
 
-		if (elementId !== null) {
-			console.warn(
-				'Prevented overwriting an existing settlement with the Settlements.add() method. Use Settlements.set() instead.'
-			);
-			return elementId;
-		} else {
-			this[nextIndex] = new Settlement(node, tx, ty, tz, rx, ry, rz);
-			return nextIndex;
-		}
-	}
-
-	/**
-	 * @description OVERWRITES the settlement with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A SETTLEMENT.
-	 * @method set
-	 * @memberof Settlements
-	 * @param {number} id The ID of the settlement.
-	 * @param {number} node The ID of the node at which the settlement is applied.
-	 * @param {number} tx Settlement displacement in the global x axis.
-	 * @param {number} ty Settlement displacement in the global y axis.
-	 * @param {number} tz Settlement displacement in the global z axis.
-	 * @param {number} rx Settlement rotation about the global x axis.
-	 * @param {number} ry Settlement rotation about the global y axis.
-	 * @param {number} rz Settlement rotation about the global z axis.
-	 * @returns The ID of the created settlement.
-	 */
-	set(id, node, tx = null, ty = null, tz = null, rx = null, ry = null, rz = null) {
-		// Abort if no args
-		if (!id) return;
-
-		this[id] = new Settlement(node, tx, ty, tz, rx, ry, rz);
-		return id;
+		this[nextIndex] = new Settlement(node, tx, ty, tz, rx, ry, rz);
+		return nextIndex;
 	}
 
 	/**

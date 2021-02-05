@@ -35,7 +35,6 @@ class ApiFunctions {
 			if (argKey === 's3d_model') {
 				Object.entries(argValue).forEach(([k, v]) => {
 					if (v instanceof LoadCombinations) {
-						console.log(v.get());
 						args.s3d_model.load_combinations = v.get();
 					}
 				});
