@@ -12,9 +12,13 @@ The SkyCiv NPM package documentation can be found here: https://skyciv.com/api/v
 
 ## Install
 
-`npm i skyciv`
+```
+npm i skyciv
+```
 
 ## Example
+
+The recommend use of the package is by using the `Model()` and `ApiObject()` classes.
 
 ```js
 const skyciv = require('skyciv');
@@ -52,6 +56,26 @@ const callback = (res) => {
 // Send the object to the API
 ao.request(callback);
 ```
+
+---
+
+## Sections Database
+
+Section library paths for all sections can be found in the `skyciv.sections` object.
+
+For example:
+```js
+const path = skyciv.sections['Australian:Steel_(300_Grade):Universal_beams:200_UB_18.2']
+
+// path is now equal to:
+["Australian", "Steel (300 Grade)", "Universal beams", "200 UB 18.2"]
+```
+
+This way, auto completion will help avoid looking up section paths manually.
+
+<div style="text-align: center;">
+    <img style="max-width: 800px" src="./img/sections-autocomplete.png"/>
+</div>
 
 ---
 

@@ -52,6 +52,7 @@ module.exports = {
 	ApiObject: require('./classes/apiObject/ApiObject'),
 	Model: require('./classes/model/Model'),
 	apiComponents,
+	sections: require('./lib/sectionsLibrary'),
 	// functions,
 	modelComponent,
 };
