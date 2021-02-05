@@ -149,45 +149,6 @@ class Materials extends ModelCollectionComponent {
 		return nextIndex;
 	}
 
-	// /**
-	//  * @description OVERWRITES the material with the ID provided. USE THE `.add()` METHOD TO SAFELY CREATE A MATERIAL.
-	//  * @method set
-	//  * @memberof Materials
-	//  * @param {number} id The ID of the material.
-	//  * @param {string} name The name of the material.
-	//  * @param {number} density The density of the material.
-	//  * @param {number} elasticity_modulus The Modulus of Elasticity of the material.
-	//  * @param {number} poissons_ratio The Poisson's Ratio for the material.
-	//  * @param {number} yield_strength The Yield strength of the material.
-	//  * @param {number} ultimate_strength The Ultimate strength the material.
-	//  * @param {"steel"|"aluminium"|"masonry"|"concrete"|"wood"|"other"} _class The type of material.
-	//  * @returns The ID of the created material.
-	//  */
-	// set(
-	// 	id,
-	// 	name,
-	// 	density,
-	// 	elasticity_modulus,
-	// 	poissons_ratio,
-	// 	yield_strength,
-	// 	ultimate_strength,
-	// 	_class
-	// ) {
-	// 	// Abort if no args
-	// 	if (!id) return;
-
-	// 	this[id] = new Material(
-	// 		name,
-	// 		density,
-	// 		elasticity_modulus,
-	// 		poissons_ratio,
-	// 		yield_strength,
-	// 		ultimate_strength,
-	// 		_class
-	// 	);
-	// 	return id;
-	// }
-
 	/**
 	 * @description Add a default material to the model.
 	 * @method add

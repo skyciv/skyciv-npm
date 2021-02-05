@@ -134,33 +134,9 @@ class LoadCombinations extends ModelCollectionComponent {
 		const nextIndex = nextObjectKey(this);
 
 		this[nextIndex] = new LoadCombination(name, combination_factors);
-		
+
 		return nextIndex;
 	}
-
-	// /**
-	//  * @method set
-	//  * @description Sets a load combination by index.
-	//  * @memberof LoadCombinations
-	//  * @param {number} id The id of the load combination to overwrite.
-	//  * @param {LoadCombinationObject} combination_factors Key value pairs for the factors to apply to the load groups.
-	//  * @example
-	//  *
-	//  * const factors = {
-	//  *     SW: 1,
-	//  *     windCase: 1,
-	//  *     liveLoad: 1.5
-	//  * }
-	//  *
-	//  * lcs.set(2, factors) // Overwrite the third load combination in the list.
-	//  */
-	// set(id, name, combination_factors) {
-	// 	// Abort if no args
-	// 	if (!id) return;
-
-	// 	this[id] = new LoadCombination(name, combination_factors);
-	// 	return id;
-	// }
 }
 
 module.exports = LoadCombinations;
