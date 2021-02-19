@@ -16,15 +16,15 @@ class DistributedLoads extends ModelCollectionComponent {
 	 * @method add
 	 * @memberof DistributedLoads
 	 * @param {number} member Member to which the distributed load will be applied. Identified by the member ID.
-	 * @param {number} x_mag_A Magnitude of load in x direction at the starting position A.
-	 * @param {number} y_mag_A Magnitude of load in y direction at the starting position A.
-	 * @param {number} z_mag_A Magnitude of load in z direction at the starting position A.
-	 * @param {number} x_mag_B Magnitude of load in x direction at the finish position B.
-	 * @param {number} y_mag_B Magnitude of load in y direction at the finish position B.
-	 * @param {number} z_mag_B Magnitude of load in z direction at the finish position B.
+	 * @param {number} x_mag_A The magnitude of the load in the x-direction at the starting position A.
+	 * @param {number} y_mag_A The magnitude of the load in the y-direction at the starting position A.
+	 * @param {number} z_mag_A The magnitude of the load in the z-direction at the starting position A.
+	 * @param {number} x_mag_B The magnitude of the load in the x-direction at the finish position B.
+	 * @param {number} y_mag_B The magnitude of the load in the y-direction at the finish position B.
+	 * @param {number} z_mag_B The magnitude of the load in the z-direction at the finish position B.
 	 * @param {number} position_A Position along member where the distributed load starts. Expressed as a percentage.
 	 * @param {number} position_B Position along member where the distributed load ends. Expressed as a percentage.
-	 * @param {number} load_group The load group to which the load belongs.
+	 * @param {string} load_group The load group to which the load belongs.
 	 * @param {"global" | "local"} axes The axes in which the distributed load will be applied.
 	 * @returns The ID of the created distributed load.
 	 */
@@ -60,7 +60,7 @@ class DistributedLoads extends ModelCollectionComponent {
 	}
 
 	/**
-	 * @description Find a distributed loads's ID from the member ID which it is located.
+	 * @description Find a distributed load's ID from the member ID which it is located.
 	 * @method idFromMemberId
 	 * @memberof DistributedLoads
 	 * @param {number} element_id The member ID of the distributed load to find.

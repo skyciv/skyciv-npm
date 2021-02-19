@@ -6,7 +6,7 @@ class Member {
 	 * @param {number} section_id The ID of the section that should be applied to the member.
 	 * @param {string} fixity_A See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code. Defaults to 'FFFFFF'.
 	 * @param {string} fixity_B See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code. Defaults to 'FFFFFF'.
-	 * @param {"normal" | "normal_continuous" | "cable"} type Defaults to 'normal'.
+	 * @param {"normal" | "normal_continuous" | "cable" | "rigid"} type Defaults to 'normal'.
 	 * @param {number} cable_length Required only when type = cable. Defaults to null.
 	 * @param {number} rotation_angle Rotation of the member about its own axis, in degrees.
 	 * @param {number} offset_Ax The local x distance that the member is offset from its centroid at node A.

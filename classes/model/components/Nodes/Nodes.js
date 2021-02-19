@@ -40,6 +40,7 @@ class Nodes extends ModelCollectionComponent {
 	 * @param {number} x The x coordinate of the node whose ID to find.
 	 * @param {number} y The y coordinate of the node whose ID to find.
 	 * @param {number} z The z coordinate of the node whose ID to find.
+	 * @returns The ID of the found node.
 	 */
 	idFromCoords(x, y, z) {
 		let id = null;

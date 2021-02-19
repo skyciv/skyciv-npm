@@ -24,6 +24,7 @@ class AreaLoads extends ModelCollectionComponent {
 	 * @param {string} column_direction Relevant only if "type": "one_way" or "type": "column_wind_load".The span direction of the applied area load.The values must be the IDs of 2 nodes which are in the nodes property.
 	 * @param {"all"| "major"} loaded_members_axis Relevant only if "type": "open_structure".Whether to apply the open structure load to all members attaching to the nodes(indicated by all), or to only those members which lie along the global XYZ axes(indicated by major).
 	 * @param {string} LG The load group to which this area load belongs.
+	 * @returns The ID of the created area load.
 	 */
 	add(
 		type,

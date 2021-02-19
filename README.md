@@ -125,8 +125,9 @@ Visit the [API docs](https://skyciv.com/api/v3/docs/getting-started) for instruc
 
 | Version  | Breaking          | Description     |
 | :---     | :---              | :---            |
+| 1.2.1    | Breaks `skyciv.section` keys. | • Typos.<br/>• Improved in-code docs.<br/>• Removed special characters from keys in `skyciv.sections`.<br/>• Added `requestPromise()` method to the `ApiObject` class. <br/>• The `request()` and `requestPromise()` method of the `ApiObject()` will now automatically store the `last_session_id` to the `auth.session_id` property of the `ApiObject` instance.<br/>• Added `SelfWeight.enable()` and `SelfWeight.disable()` methods.<br/>• Made all `add()` methods return the ID of the new element.<br/>•  |
 | 1.2.0    | false             | • Added 37 new classes including the ApiObject() and Model() classes.   |
-| 1.1.1    | false             | • README.md patch   |
+| 1.1.1    | false             | • README.md patch.   |
 | 1.1.0    | true (for nodejs) | • `skyciv.request()` now returns parsed JSON for node.js<br/>• Added `skyciv.requestPromise()`   |
-| 1.0.1    | true              | • Changed `skyciv.skyciv.request()` to `skyciv.request()` |
-| 1.0.0    | -                 | Initial release |
+| 1.0.1    | true              | • Changed `skyciv.skyciv.request()` to `skyciv.request()`. |
+| 1.0.0    | -                 | Initial release. |

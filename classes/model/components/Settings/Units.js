@@ -112,7 +112,7 @@ class Units {
 	/**
 	 * @method setDefaultImperial
 	 * @memberof Units
-	 * @description Set the unit system to the default metric values.
+	 * @description Set the unit system to the default imperial values.
 	 * @example
 	 * // Default values for imperial
 	 * {
@@ -147,10 +147,11 @@ class Units {
 	 * @description Set individual properties of the units object. Imperial and Metric MUST NOT be mixed.
 	 * @param {UnitsObject} unitsObject An object of key value pairs.
 	 * @example
-	 * const unitsObj = new UnitsObject{
+	 * const unitsObj = new UnitsObject("metric")
+	 * unitsObj.set({
 	 *  "length": "mm",
 	 *  "pressure": "kpa"
-	 * }
+	 * })
 	 */
 	set(unitsObject) {
 		Object.entries(unitsObject).forEach(([k, v]) => {
@@ -159,6 +160,7 @@ class Units {
 			}
 		});
 	}
+
 }
 
 module.exports = Units;

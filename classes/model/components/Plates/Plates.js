@@ -18,11 +18,12 @@ class Plates extends ModelCollectionComponent {
 	 * @param {number[]} nodes An array of node IDs that define the plate. At least 3 IDs are required.
 	 * @param {number} thickness Plate thickness.
 	 * @param {number} material_id The ID of the material to use for the plate.
-	 * @param {number} rotZ Rotation about the Z axis.
+	 * @param {number} rotZ Rotation about the z-axis.
 	 * @param {"mindlin"} type Mindlin plates take into account shear deformations based on the Mindlin-Reissner Theory.
 	 * @param {number} offset Offset of the plate along its local z-axis.
 	 * @param {"stress" | "strain"} state Denotes whether the plate is in a state of plane stress or plane strain.
 	 * @param {boolean} is_meshed Indicates whether the plate is already meshed.
+	 * @returns The ID of the created plate.
 	 */
 	add(
 		nodes,

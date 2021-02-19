@@ -53,6 +53,7 @@ class Materials extends ModelCollectionComponent {
 	 * @method add
 	 * @memberof Materials
 	 * @param {"Structural Steel" | "Aluminium" | "Carbon Fibre Reinforced Plastic" | "Concrete" | "Concrete High Strength" | "Oakwood" | "Glass"} material The material name.
+	 * @returns The ID of the created material.
 	 */
 	add(material) {
 		const name = defaultMaterials[material].name;
@@ -63,7 +64,7 @@ class Materials extends ModelCollectionComponent {
 		const ultimate_strength = defaultMaterials[material].ultimate_strength;
 		const _class = defaultMaterials[material].class;
 
-		this.addCustom(
+		const index = this.addCustom(
 			name,
 			density,
 			elasticity_modulus,
@@ -72,6 +73,8 @@ class Materials extends ModelCollectionComponent {
 			ultimate_strength,
 			_class
 		);
+
+		return index;
 	}
 }
 

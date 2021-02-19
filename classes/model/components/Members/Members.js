@@ -20,8 +20,9 @@ class Members extends ModelCollectionComponent {
 	 * @param {number} section_id The ID of the section to apply to the member.
 	 * @param {string} fixity_A See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code.
 	 * @param {string} fixity_B See docs for restraint code https://skyciv.com/api/v3/docs/s3d-model#restraint-code.
-	 * @param {"normal" | "normal_continuous" | "cable"} type The type of member.
+	 * @param {"normal" | "normal_continuous" | "cable" | "rigid"} type The type of member.
 	 * @param {number} cable_length Required only when type = cable.
+	 * @returns The ID of the created member.
 	 */
 	add(
 		node_A,

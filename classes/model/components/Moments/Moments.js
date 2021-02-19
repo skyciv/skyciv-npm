@@ -19,10 +19,10 @@ class Moments extends ModelCollectionComponent {
 	 * @param {number} node The node ID which the moment is located. If type is "m", provide value null.
 	 * @param {number} member The member ID which the moment is located. If type is "n", provide value null.
 	 * @param {number} position The percentage from node_A to node_B of the member which the moment is located. E.g. 10 for 10%.  If type is "n", provide value null.
-	 * @param {number} x_mag The magnitude of the moment about the x axis. Positive = counter-clockwise, negative = clockwise.
-	 * @param {number} y_mag The magnitude of the moment about the y axis. Positive = counter-clockwise, negative = clockwise.
-	 * @param {number} z_mag The magnitude of the moment about the z axis. Positive = counter-clockwise, negative = clockwise.
-	 * @param {number} load_group The load group to which the moment will be grouped.
+	 * @param {number} x_mag The magnitude of the moment about the x-axis. Positive = counter-clockwise, negative = clockwise.
+	 * @param {number} y_mag The magnitude of the moment about the y-axis. Positive = counter-clockwise, negative = clockwise.
+	 * @param {number} z_mag The magnitude of the moment about the z-axis. Positive = counter-clockwise, negative = clockwise.
+	 * @param {string} load_group The load group to which the moment will be grouped.
 	 * @returns The ID of the created moment.
 	 */
 	add(
@@ -42,11 +42,12 @@ class Moments extends ModelCollectionComponent {
 	}
 
 	/**
-	 * @description Find a moments's ID from the node ID which it is located.
+	 * @description Find a moment's ID from the node ID which it is located.
 	 * @method idFromElementId
 	 * @memberof Moments
 	 * @param {"n" | "m"} type The type of object to which the load is applied. node, member.
 	 * @param {number} element_id The node or member ID of the moment to find.
+	 * @returns The ID of the moment that is found.
 	 */
 	idFromElementId(type, element_id) {
 		let found_id = null;

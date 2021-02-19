@@ -1,6 +1,7 @@
 # Folders
 jsdoc-template/
 docs/
+test/
 
 # Files
 jsdoc.json

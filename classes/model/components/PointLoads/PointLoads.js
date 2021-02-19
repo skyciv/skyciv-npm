@@ -19,10 +19,10 @@ class PointLoads extends ModelCollectionComponent {
 	 * @param {number} node The node ID which the point load is located. If type is "m", provide value null.
 	 * @param {number} member The member ID which the point load is located. If type is "n", provide value null.
 	 * @param {number} position The percentage from node_A to node_B of the member which the point load is located. E.g. 10 for 10%.  If type is "n", provide value null.
-	 * @param {number} x_mag The magnitude of the point load force along the x axis.
-	 * @param {number} y_mag The magnitude of the point load force along the y axis.
-	 * @param {number} z_mag The magnitude of the point load force along the z axis.
-	 * @param {number} load_group The load group to which the point load will be grouped.
+	 * @param {number} x_mag The magnitude of the point load force along the x-axis.
+	 * @param {number} y_mag The magnitude of the point load force along the y-axis.
+	 * @param {number} z_mag The magnitude of the point load force along the z-axis.
+	 * @param {string} load_group The load group to which the point load will be grouped.
 	 * @returns The ID of the created point load.
 	 */
 	add(
@@ -53,11 +53,12 @@ class PointLoads extends ModelCollectionComponent {
 	}
 
 	/**
-	 * @description Find a point loads's ID from the node ID which it is located.
+	 * @description Find a point load's ID from the node ID which it is located.
 	 * @method idFromElementId
 	 * @memberof PointLoads
 	 * @param {"n" | "m"} type The type of object to which the load is applied. node, member.
 	 * @param {number} element_id The node or member ID of the point load to find.
+	 * @returns The ID of the found element.
 	 */
 	idFromElementId(type, element_id) {
 		let found_id = null;

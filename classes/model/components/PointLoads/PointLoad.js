@@ -5,10 +5,10 @@ class PointLoad {
 	 * @param {number} node The node ID which the point load is located. If type is "m", provide value null.
 	 * @param {number} member The member ID which the point load is located. If type is "n", provide value null.
 	 * @param {number} position The percentage from node_A to node_B of the member which the point load is located. E.g. 10 for 10%.  If type is "n", provide value null.
-	 * @param {number} x_mag The magnitude of the point load force along the x axis.
-	 * @param {number} y_mag The magnitude of the point load force along the y axis.
-	 * @param {number} z_mag The magnitude of the point load force along the z axis.
-	 * @param {number} load_group The load group to which the point load will be grouped.
+	 * @param {number} x_mag The magnitude of the point load force along the x-axis.
+	 * @param {number} y_mag The magnitude of the point load force along the y-axis.
+	 * @param {number} z_mag The magnitude of the point load force along the z-axis.
+	 * @param {string} load_group The load group to which the point load will be grouped.
 	 * @example
 	 * const nodeLoad = new PointLoad('n', 1, null, null, 0, -5, 0, 1);
 	 * const memberLoad = new PointLoad('m', null, 3, 30, 0, -5, 0, 1);
@@ -21,7 +21,7 @@ class PointLoad {
 		x_mag = 0,
 		y_mag = 0,
 		z_mag = 0,
-		load_group = "LG1"
+		load_group = 'LG1'
 	) {
 		this.type = type;
 		if (node !== null) {

@@ -18,6 +18,7 @@ class LoadCombinations extends ModelCollectionComponent {
 	 * @memberof LoadCombinations
 	 * @param {string} name The name of the load combination.
 	 * @param {LoadCombinationObject} combination_factors Key value pairs for the factors to apply to the load groups.
+	 * @returns The ID of the created load combination.
 	 * @example
 	 * const lcs = new LoadCombinations();
 	 *
