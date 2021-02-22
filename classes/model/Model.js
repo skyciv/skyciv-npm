@@ -13,8 +13,9 @@ const Moments = require('./components/Moments/Moments');
 const DistributedLoads = require('./components/DistributedLoads/DistributedLoads');
 const Pressures = require('./components/Pressures/Pressures');
 const AreaLoads = require('./components/AreaLoads/AreaLoads');
-const SelfWeight = require('./components/SelfWeight/SelfWeight');
+const SelfWeights = require('./components/SelfWeights/SelfWeights');
 const LoadCombinations = require('./components/LoadCombinations/LoadCombinations');
+const modelAdapter = require('../../utils/modelAdapter');
 
 /**
  * @typedef SkyCivModelObject
@@ -79,7 +80,7 @@ class Model {
 		this.pressures = new Pressures();
 		this.area_loads = new AreaLoads();
 		this.member_prestress_loads = {};
-		this.self_weight = new SelfWeight();
+		this.self_weight = new SelfWeights();
 		this.load_combinations = new LoadCombinations();
 		this.load_cases = {};
 		this.nodal_masses = {};
@@ -102,21 +103,17 @@ class Model {
 	/**
 	 * @method set
 	 * @memberof Model
-	 * @description Set individual properties of the model object.
+	 * @description Set individual properties of the model object. 
 	 * @param {SkyCivModelObject} model_object An object of key value pairs
 	 * @example
 	 * const model = new Model()
 	 * model.set({
 	 *  nodes: SkyCivNodesObject,
-	 *  members: "SkyCivMembersObject"
+	 *  members: SkyCivMembersObject
 	 * })
 	 */
 	set(model_object) {
-		Object.entries(model_object).forEach(([k, v]) => {
-			if (this.hasOwnProperty(k)) {
-				this[k] = v;
-			}
-		});
+		modelAdapter(model_object, this);
 	}
 }
 

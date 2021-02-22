@@ -20,7 +20,7 @@ class LoadCombination extends ModelCollectionComponent {
 	 * @extends ModelCollectionComponent
 	 * @param {LoadCombinationObject} combination_factors Key value pairs for the factors to apply to the load groups.
 	 */
-	constructor(name, combination_factors) {
+	constructor(name, combination_factors = {}) {
 		super();
 		this.set(name, combination_factors);
 	}
@@ -43,7 +43,7 @@ class LoadCombination extends ModelCollectionComponent {
 	 * lc.clearAll() // To remove any existing factors.
 	 * lc.set(name, factors)
 	 */
-	set(name, combination_factors) {
+	set(name, combination_factors = {}) {
 		this.name = name;
 		Object.entries(combination_factors).forEach(([k, v]) => {
 			if (k === 'name') {

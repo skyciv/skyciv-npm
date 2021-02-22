@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Home - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+  <link type="text/css" rel="stylesheet" href="styles/collapse.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li  class="active" >
+        <a href="index.html">
+          
+          
+            <svg fill="#0095dd" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      SkyCiv NPM Package
+    </h3>
+
+    
+      <h3>
+        Resources
+      </h3>
+      
+        <a href="https://www.skyciv.com/api/v3">SkyCiv API Docs</a>
+      
+    
+
+    <h3>Classes</h3><ul><li id="ApiFunction-nav"><a href="ApiFunction.html">ApiFunction</a></li><li id="ApiFunctions-nav"><a href="ApiFunctions.html">ApiFunctions</a><ul class='methods'><li data-type="method" id="ApiFunctions-add-nav"><a href="ApiFunctions.html#.add">add</a></li><li data-type="method" id="ApiFunctions-get-nav"><a href="ApiFunctions.html#.get">get</a></li><li data-type="method" id="ApiFunctions-remove-nav"><a href="ApiFunctions.html#.remove">remove</a></li><li data-type="method" id="ApiFunctions-removeAll-nav"><a href="ApiFunctions.html#.removeAll">removeAll</a></li></ul></li><li id="ApiObject-nav"><a href="ApiObject.html">ApiObject</a><ul class='methods'><li data-type="method" id="ApiObject-get-nav"><a href="ApiObject.html#.get">get</a></li><li data-type="method" id="ApiObject-request-nav"><a href="ApiObject.html#request">request</a></li><li data-type="method" id="ApiObject-requestPromise-nav"><a href="ApiObject.html#requestPromise">requestPromise</a></li></ul></li><li id="AreaLoad-nav"><a href="AreaLoad.html">AreaLoad</a></li><li id="AreaLoads-nav"><a href="AreaLoads.html">AreaLoads</a><ul class='methods'><li data-type="method" id="AreaLoads-add-nav"><a href="AreaLoads.html#.add">add</a></li><li data-type="method" id="AreaLoads-getAreaLoadIdsFromNodesIds-nav"><a href="AreaLoads.html#.getAreaLoadIdsFromNodesIds">getAreaLoadIdsFromNodesIds</a></li></ul></li><li id="AuthObject-nav"><a href="AuthObject.html">AuthObject</a></li><li id="DistributedLoad-nav"><a href="DistributedLoad.html">DistributedLoad</a></li><li id="DistributedLoads-nav"><a href="DistributedLoads.html">DistributedLoads</a><ul class='methods'><li data-type="method" id="DistributedLoads-add-nav"><a href="DistributedLoads.html#.add">add</a></li><li data-type="method" id="DistributedLoads-idFromMemberId-nav"><a href="DistributedLoads.html#.idFromMemberId">idFromMemberId</a></li></ul></li><li id="LoadCombination-nav"><a href="LoadCombination.html">LoadCombination</a><ul class='methods'><li data-type="method" id="LoadCombination-set-nav"><a href="LoadCombination.html#.set">set</a></li></ul></li><li id="LoadCombinations-nav"><a href="LoadCombinations.html">LoadCombinations</a><ul class='methods'><li data-type="method" id="LoadCombinations-add-nav"><a href="LoadCombinations.html#.add">add</a></li></ul></li><li id="Material-nav"><a href="Material.html">Material</a></li><li id="Materials-nav"><a href="Materials.html">Materials</a><ul class='methods'><li data-type="method" id="Materials-add-nav"><a href="Materials.html#.add">add</a></li><li data-type="method" id="Materials-addCustom-nav"><a href="Materials.html#.addCustom">addCustom</a></li></ul></li><li id="Member-nav"><a href="Member.html">Member</a></li><li id="Members-nav"><a href="Members.html">Members</a><ul class='methods'><li data-type="method" id="Members-add-nav"><a href="Members.html#.add">add</a></li><li data-type="method" id="Members-getMemberIdsFromNodesIds-nav"><a href="Members.html#.getMemberIdsFromNodesIds">getMemberIdsFromNodesIds</a></li></ul></li><li id="MeshedPlate-nav"><a href="MeshedPlate.html">MeshedPlate</a></li><li id="MeshedPlates-nav"><a href="MeshedPlates.html">MeshedPlates</a><ul class='methods'><li data-type="method" id="MeshedPlates-add-nav"><a href="MeshedPlates.html#.add">add</a></li><li data-type="method" id="MeshedPlates-getMeshedPlateIdsFromNodesIds-nav"><a href="MeshedPlates.html#.getMeshedPlateIdsFromNodesIds">getMeshedPlateIdsFromNodesIds</a></li></ul></li><li id="Model-nav"><a href="Model.html">Model</a><ul class='methods'><li data-type="method" id="Model-get-nav"><a href="Model.html#.get">get</a></li><li data-type="method" id="Model-set-nav"><a href="Model.html#.set">set</a></li></ul></li><li id="ModelCollectionComponent-nav"><a href="ModelCollectionComponent.html">ModelCollectionComponent</a><ul class='methods'><li data-type="method" id="ModelCollectionComponent-clear-nav"><a href="ModelCollectionComponent.html#.clear">clear</a></li><li data-type="method" id="ModelCollectionComponent-clearAll-nav"><a href="ModelCollectionComponent.html#.clearAll">clearAll</a></li><li data-type="method" id="ModelCollectionComponent-exists-nav"><a href="ModelCollectionComponent.html#.exists">exists</a></li><li data-type="method" id="ModelCollectionComponent-get-nav"><a href="ModelCollectionComponent.html#.get">get</a></li><li data-type="method" id="ModelCollectionComponent-length-nav"><a href="ModelCollectionComponent.html#.length">length</a></li></ul></li><li id="Moment-nav"><a href="Moment.html">Moment</a></li><li id="Moments-nav"><a href="Moments.html">Moments</a><ul class='methods'><li data-type="method" id="Moments-add-nav"><a href="Moments.html#.add">add</a></li><li data-type="method" id="Moments-idFromElementId-nav"><a href="Moments.html#.idFromElementId">idFromElementId</a></li><li data-type="method" id="Moments-verify-nav"><a href="Moments.html#.verify">verify</a></li></ul></li><li id="Node-nav"><a href="Node.html">Node</a></li><li id="Nodes-nav"><a href="Nodes.html">Nodes</a><ul class='methods'><li data-type="method" id="Nodes-add-nav"><a href="Nodes.html#.add">add</a></li><li data-type="method" id="Nodes-idFromCoords-nav"><a href="Nodes.html#.idFromCoords">idFromCoords</a></li></ul></li><li id="OptionsObject-nav"><a href="OptionsObject.html">OptionsObject</a></li><li id="Plate-nav"><a href="Plate.html">Plate</a></li><li id="Plates-nav"><a href="Plates.html">Plates</a><ul class='methods'><li data-type="method" id="Plates-add-nav"><a href="Plates.html#.add">add</a></li><li data-type="method" id="Plates-getPlateIdsFromNodesIds-nav"><a href="Plates.html#.getPlateIdsFromNodesIds">getPlateIdsFromNodesIds</a></li></ul></li><li id="PointLoad-nav"><a href="PointLoad.html">PointLoad</a></li><li id="PointLoads-nav"><a href="PointLoads.html">PointLoads</a><ul class='methods'><li data-type="method" id="PointLoads-add-nav"><a href="PointLoads.html#.add">add</a></li><li data-type="method" id="PointLoads-idFromElementId-nav"><a href="PointLoads.html#.idFromElementId">idFromElementId</a></li><li data-type="method" id="PointLoads-verify-nav"><a href="PointLoads.html#.verify">verify</a></li></ul></li><li id="Pressure-nav"><a href="Pressure.html">Pressure</a></li><li id="Pressures-nav"><a href="Pressures.html">Pressures</a><ul class='methods'><li data-type="method" id="Pressures-add-nav"><a href="Pressures.html#.add">add</a></li><li data-type="method" id="Pressures-idFromPlateId-nav"><a href="Pressures.html#.idFromPlateId">idFromPlateId</a></li></ul></li><li id="Section-nav"><a href="Section.html">Section</a><ul class='methods'><li data-type="method" id="Section-clearSelf-nav"><a href="Section.html#.clearSelf">clearSelf</a></li><li data-type="method" id="Section-loadCustom-nav"><a href="Section.html#.loadCustom">loadCustom</a></li><li data-type="method" id="Section-loadSection-nav"><a href="Section.html#.loadSection">loadSection</a></li></ul></li><li id="Sections-nav"><a href="Sections.html">Sections</a><ul class='methods'><li data-type="method" id="Sections-addCustomSection-nav"><a href="Sections.html#.addCustomSection">addCustomSection</a></li><li data-type="method" id="Sections-addLibrarySection-nav"><a href="Sections.html#.addLibrarySection">addLibrarySection</a></li><li data-type="method" id="Sections-idsFromPath-nav"><a href="Sections.html#.idsFromPath">idsFromPath</a></li></ul></li><li id="SelfWeight-nav"><a href="SelfWeight.html">SelfWeight</a><ul class='methods'><li data-type="method" id="SelfWeight-disable-nav"><a href="SelfWeight.html#disable">disable</a></li><li data-type="method" id="SelfWeight-enable-nav"><a href="SelfWeight.html#enable">enable</a></li></ul></li><li id="SelfWeights-nav"><a href="SelfWeights.html">SelfWeights</a><ul class='methods'><li data-type="method" id="SelfWeights-add-nav"><a href="SelfWeights.html#add">add</a></li><li data-type="method" id="SelfWeights-disable-nav"><a href="SelfWeights.html#disable">disable</a></li></ul></li><li id="Settings-nav"><a href="Settings.html">Settings</a><ul class='methods'><li data-type="method" id="Settings-set-nav"><a href="Settings.html#.set">set</a></li></ul></li><li id="Settlement-nav"><a href="Settlement.html">Settlement</a></li><li id="Settlements-nav"><a href="Settlements.html">Settlements</a><ul class='methods'><li data-type="method" id="Settlements-add-nav"><a href="Settlements.html#.add">add</a></li><li data-type="method" id="Settlements-idFromNodeId-nav"><a href="Settlements.html#.idFromNodeId">idFromNodeId</a></li></ul></li><li id="Support-nav"><a href="Support.html">Support</a></li><li id="Supports-nav"><a href="Supports.html">Supports</a><ul class='methods'><li data-type="method" id="Supports-add-nav"><a href="Supports.html#.add">add</a></li><li data-type="method" id="Supports-idFromNodeId-nav"><a href="Supports.html#.idFromNodeId">idFromNodeId</a></li></ul></li><li id="Units-nav"><a href="Units.html">Units</a><ul class='methods'><li data-type="method" id="Units-set-nav"><a href="Units.html#.set">set</a></li><li data-type="method" id="Units-setDefaultImperial-nav"><a href="Units.html#.setDefaultImperial">setDefaultImperial</a></li><li data-type="method" id="Units-setDefaultMetric-nav"><a href="Units.html#.setDefaultMetric">setDefaultMetric</a></li><li data-type="method" id="Units-setUnitSystem-nav"><a href="Units.html#.setUnitSystem">setUnitSystem</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#request">request</a></li><li><a href="global.html#requestPromise">requestPromise</a></li></ul>
+  </nav>
+
+  <div id="main">
+    
+
+    
+      
+
+
+
+    
+
+      
+
+
+  <section class="readme">
+    <article>
+      <h1>The SkyCiv NPM Package</h1>
+<p>This package provides helpful tools to create objects and interact with the SkyCiv API. These components can be used to quickly construct models by providing code completion, parameter information and examples.</p>
+<div style="text-align: center;">
+    <img style="max-width: 800px" src="./img/intellisense.png"/>
+</div>
+<p>The SkyCiv API documentation can be found here: <a href="https://skyciv.com/api/v3/">https://skyciv.com/api/v3/</a></p>
+<p>The SkyCiv NPM package documentation can be found here: <a href="https://skyciv.com/api/v3/docs/packages/#npm---javascript">https://skyciv.com/api/v3/docs/packages/#npm---javascript</a></p>
+<h2>Install</h2>
+<pre class="prettyprint source"><code>npm i skyciv
+</code></pre>
+<h2>Example</h2>
+<p>The recommended use of this package is by using the <code>Model()</code> and <code>ApiObject()</code> classes.</p>
+<pre class="prettyprint source lang-js"><code>const skyciv = require('skyciv');
+
+// Create an instance of a SkyCiv API Object and Model
+const ao = new skyciv.ApiObject();
+const model = new skyciv.Model('metric');
+
+// Nodes
+model.nodes.add(0, 0.5, 0);
+model.nodes.add(0, 0, 0);
+model.nodes.add(1, 0, 0);
+model.nodes.add(1, 2, 0);
+model.nodes.add(1.5, 0, 0);
+model.nodes.add(1.75, 1, 0);
+model.nodes.add(2, 2, 0);
+model.nodes.add(2.25, 1, 0);
+model.nodes.add(2.5, 0, 0);
+model.nodes.add(2.5, 2, 0);
+model.nodes.add(3, 0, 0);
+model.nodes.add(3.5, 2, 0);
+model.nodes.add(3.5, 0, 0);
+model.nodes.add(3.75, 1, 0);
+model.nodes.add(4, 2, 0);
+model.nodes.add(4.25, 1, 0);
+model.nodes.add(4.5, 0, 0);
+model.nodes.add(6, 2, 0);
+model.nodes.add(5, 2, 0);
+model.nodes.add(5, 1, 0);
+model.nodes.add(6, 1, 0);
+model.nodes.add(6, 0, 0);
+model.nodes.add(5, 0, 0);
+model.nodes.add(7.5, 2, 0);
+model.nodes.add(6.5, 2, 0);
+model.nodes.add(6.5, 0, 0);
+model.nodes.add(7.5, 0, 0);
+model.nodes.add(8, 2, 0);
+model.nodes.add(9, 2, 0);
+model.nodes.add(9, 1, 0);
+model.nodes.add(8, 1, 0);
+model.nodes.add(8, 0, 0);
+model.nodes.add(9, 0, 0);
+model.nodes.add(9.5, 2, 0);
+model.nodes.add(9.5, 0, 0);
+model.nodes.add(10, 0, 0);
+model.nodes.add(10, 1, 0);
+model.nodes.add(10, 2, 0);
+model.nodes.add(11, 2, 0);
+model.nodes.add(11, 1, 0);
+model.nodes.add(11.5, 2, 0);
+model.nodes.add(12, 2, 0);
+model.nodes.add(12.5, 2, 0);
+model.nodes.add(12, 0, 0);
+model.nodes.add(-0.5, -0.5, 0);
+model.nodes.add(1, -0.5, 0);
+model.nodes.add(3, -0.5, 0);
+model.nodes.add(6, -0.5, 0);
+model.nodes.add(9, -0.5, 0);
+model.nodes.add(10, -0.5, 0);
+model.nodes.add(12, -0.5, 0);
+model.nodes.add(13, -0.5, 0);
+model.nodes.add(10.5, 1, 0);
+model.nodes.add(10, 1.5, 0);
+model.nodes.add(10.5, 1.5, 0);
+model.nodes.add(11, 1.5, 0);
+model.nodes.add(10.5, 2, 0);
+
+// Members
+model.members.add(4, 3, 1);
+model.members.add(3, 2, 1);
+model.members.add(2, 1, 1);
+model.members.add(5, 6, 1);
+model.members.add(6, 7, 1);
+model.members.add(7, 8, 1);
+model.members.add(8, 9, 1);
+model.members.add(6, 8, 1);
+model.members.add(10, 11, 1);
+model.members.add(11, 12, 1);
+model.members.add(13, 14, 1);
+model.members.add(14, 15, 1);
+model.members.add(15, 16, 1);
+model.members.add(16, 17, 1);
+model.members.add(14, 16, 1);
+model.members.add(18, 19, 1);
+model.members.add(19, 20, 1);
+model.members.add(20, 21, 1);
+model.members.add(21, 22, 1);
+model.members.add(22, 23, 1);
+model.members.add(24, 25, 1);
+model.members.add(25, 26, 1);
+model.members.add(26, 27, 1);
+model.members.add(28, 29, 1);
+model.members.add(29, 30, 1);
+model.members.add(30, 31, 1);
+model.members.add(31, 32, 1);
+model.members.add(31, 33, 1);
+model.members.add(34, 35, 1);
+model.members.add(36, 37, 1);
+model.members.add(37, 54, 1);
+model.members.add(54, 38, 1);
+model.members.add(38, 57, 1);
+model.members.add(57, 39, 1);
+model.members.add(39, 56, 1);
+model.members.add(56, 40, 1);
+model.members.add(40, 53, 1);
+model.members.add(37, 53, 1);
+model.members.add(41, 42, 1);
+model.members.add(42, 43, 1);
+model.members.add(42, 44, 1);
+model.members.add(45, 46, 2);
+model.members.add(46, 47, 2);
+model.members.add(47, 48, 2);
+model.members.add(48, 49, 2);
+model.members.add(49, 50, 2);
+model.members.add(50, 51, 2);
+model.members.add(51, 52, 2);
+
+// Rigid links - null for section id
+model.members.add(3, 46, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(47, 11, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(10, 7, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(12, 15, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(22, 26, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(22, 48, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(33, 35, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(33, 49, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(36, 50, null, 'FFFfff', 'FFFfff', 'rigid');
+model.members.add(44, 51, null, 'FFFfff', 'FFFfff', 'rigid');
+
+// Plates
+const plate_id = model.plates.add([37, 40, 39, 38], 5, 1);
+model.plates[plate_id].isMeshed = true;
+
+// Meshed plates
+model.meshed_plates.add(1, 37, 53, 55, 54);
+model.meshed_plates.add(1, 53, 40, 56, 55);
+model.meshed_plates.add(1, 54, 55, 57, 38);
+model.meshed_plates.add(1, 55, 56, 39, 57);
+
+// Sections
+model.sections.addLibrarySection(skyciv.sections.Australian_Steel_300_Grade_SHS_Grade_350_65x3_SHS, 1);
+model.sections.addLibrarySection(skyciv.sections.Australian_Steel_300_Grade_Universal_beams_410_UB_53_7, 1);
+
+// Materials
+model.materials.add('Structural Steel');
+
+// Supports
+model.supports.add(45, 'FFFffr');
+model.supports.add(52, 'FFFffr');
+
+// Point loads
+// Enter null for member params where type 'n' is used.
+// Enter null for node params where 'm' is used.
+model.point_loads.add('n', 34, null, null, 0, -1, 0, 'LG1');
+model.point_loads.add('m', null, 9, 50, 0, -0.7, 0, 'LG1');
+
+// Moments - enter null for member params as type 'n' is used
+model.moments.add('n', 28, null, null, 0, 0, -0.5, 'LG1');
+
+// Distributed loads
+model.distributed_loads.add(45, 0, -0.2, 0, 0, 0, 0, 0, 100, 'LG1');
+
+// Pressures
+model.pressures.add(1, 'global', 0, 0, 0.1, 'LG1');
+
+// Area loads
+model.area_loads.add('open_structure', [14, 16, 15], -1, 'Z', null, null, '14,16', 'all', 'LG1');
+
+// Self-weight
+model.self_weight.add(true, 0, -1, 0, 'SW1');
+
+// Load combination
+model.load_combinations.add('LC1', { SW1: 1, LG1: 0.8 });
+
+// Set authentication
+ao.auth.username = 'YOUR_SKYCIV_USERNAME';
+ao.auth.key = 'YOUR_API_KEY';
+
+// Set functions
+ao.functions.add('S3D.session.start');
+ao.functions.add('S3D.model.set', { s3d_model: model });
+// ao.functions.add('S3D.model.solve', { analysis_type: 'linear' }); // Uncomment when model is functional
+ao.functions.add('S3D.file.save', { path: 'api/NPM/', name: 'npm-js' });
+
+// Callback to handle the response
+const callback = (res) => console.log(res.response.msg);
+
+// Make the request!
+ao.request(callback);
+</code></pre>
+<p>Now, we can even view the model in <a href="https://platform.skyciv.com/structural">S3D</a>.</p>
+<div style="text-align: center;">
+    <img style="max-width: 100%" src="https://github.com/skyciv/skyciv-npm/raw/master/img/result-in-s3d.png"/>
+</div>
+<hr>
+<h2>Sections Database</h2>
+<p>Section library paths for all sections can be found in the <code>skyciv.sections</code> object.</p>
+<p>For example:</p>
+<pre class="prettyprint source lang-js"><code>const path = skyciv.sections.Australian_Steel_300_Grade_Universal_beams_200_UB_18_2;
+
+// path is now equal to:
+[&quot;Australian&quot;, &quot;Steel (300 Grade)&quot;, &quot;Universal beams&quot;, &quot;200 UB 18.2&quot;]
+</code></pre>
+<p>This way, auto-completion helps to avoid looking up section paths manually.</p>
+<div style="text-align: center;">
+    <img style="max-width: 800px" src="./img/sections-autocomplete.png"/>
+</div>
+<hr>
+<h2>Global Methods</h2>
+<h3><code>skyciv.request(apiObject, callback?, options?)</code></h3>
+<blockquote>
+<p><strong>Note: We recommend using the <code>.request</code> method of the ApiObject class as seen in the above sample rather than these functions.</strong></p>
+</blockquote>
+<p>Make a request to the SkyCiv API. The callback function receives the parsed response.</p>
+<pre class="prettyprint source lang-js"><code>const skyciv = require('skyciv');
+
+const apiObject = {...}; // A custom built object
+// or
+const apiObject = new skyciv.ApiObject();
+
+skyciv.request(apiObject, function(res) {
+    // Do something with results object &quot;res&quot;
+}, options);
+</code></pre>
+<h3><code>skyciv.requestPromise(apiObject, options?)</code></h3>
+<p>Make a request to the SkyCiv API and receive a pending promise.</p>
+<pre class="prettyprint source lang-js"><code>const skyciv = require('skyciv');
+async function main() {
+    
+    const apiObject = {...}; // A custom built object
+    // or
+    const apiObject = new skyciv.ApiObject();
+
+    // then
+    const skycivResponse = await skyciv.requestPromise(apiObject);
+    // Do something with the response
+}
+
+main();
+</code></pre>
+<h2>Manually building the API Object</h2>
+<p>Visit the <a href="https://skyciv.com/api/v3/docs/getting-started">API docs</a> for instructions on how to create an instance of the SkyCiv API object.</p>
+<h2>Changelog</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Version</th>
+<th style="text-align:left">Breaking</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1.2.2</td>
+<td style="text-align:left">Breaks <code>model.self_weight</code>.</td>
+<td style="text-align:left">• <code>Model().set</code> method now can now accept a downloaded JSON model from platform.skyciv.com/structural.<br/>• Fixed self_weight data structure.<br/>• <code>Functions</code> and <code>Function</code> class now defaults <code>args</code> to an empty object.</td>
+</tr>
+<tr>
+<td style="text-align:left">1.2.1</td>
+<td style="text-align:left">Breaks <code>skyciv.section</code> keys.</td>
+<td style="text-align:left">• Typos.<br/>• Improved in-code docs.<br/>• Removed special characters from keys in <code>skyciv.sections</code>.<br/>• Added <code>requestPromise()</code> method to the <code>ApiObject</code> class. <br/>• The <code>request()</code> and <code>requestPromise()</code> method of the <code>ApiObject()</code> will now automatically store the <code>last_session_id</code> to the <code>auth.session_id</code> property of the <code>ApiObject</code> instance.<br/>• Added <code>SelfWeight.enable()</code> and <code>SelfWeight.disable()</code> methods.<br/>• Made all <code>add()</code> methods return the ID of the new element.</td>
+</tr>
+<tr>
+<td style="text-align:left">1.2.0</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">• Added 37 new classes including the ApiObject() and Model() classes.</td>
+</tr>
+<tr>
+<td style="text-align:left">1.1.1</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">• README.md patch.</td>
+</tr>
+<tr>
+<td style="text-align:left">1.1.0</td>
+<td style="text-align:left">true (for nodejs)</td>
+<td style="text-align:left">• <code>skyciv.request()</code> now returns parsed JSON for node.js<br/>• Added <code>skyciv.requestPromise()</code></td>
+</tr>
+<tr>
+<td style="text-align:left">1.0.1</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">• Changed <code>skyciv.skyciv.request()</code> to <code>skyciv.request()</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left">1.0.0</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Initial release.</td>
+</tr>
+</tbody>
+</table>
+    </article>
+  </section>
+
+
+    
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

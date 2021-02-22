@@ -22,7 +22,7 @@ class Plates extends ModelCollectionComponent {
 	 * @param {"mindlin"} type Mindlin plates take into account shear deformations based on the Mindlin-Reissner Theory.
 	 * @param {number} offset Offset of the plate along its local z-axis.
 	 * @param {"stress" | "strain"} state Denotes whether the plate is in a state of plane stress or plane strain.
-	 * @param {boolean} is_meshed Indicates whether the plate is already meshed.
+	 * @param {boolean} isMeshed Indicates whether the plate is already meshed.
 	 * @returns The ID of the created plate.
 	 */
 	add(
@@ -33,7 +33,7 @@ class Plates extends ModelCollectionComponent {
 		type = 'mindlin',
 		offset = 0,
 		state = 'stress',
-		is_meshed = false
+		isMeshed = false
 	) {
 		const nextIndex = nextObjectKey(this);
 		const elementIds = this.getPlateIdsFromNodesIds(nodes);
@@ -50,7 +50,7 @@ class Plates extends ModelCollectionComponent {
 			type,
 			offset,
 			state,
-			is_meshed
+			isMeshed
 		);
 		return nextIndex;
 	}

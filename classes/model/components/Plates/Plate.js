@@ -8,7 +8,7 @@ class Plate {
 	 * @param {"mindlin"} type Mindlin plates take into account shear deformations based on the Mindlin-Reissner Theory.
 	 * @param {number} offset Offset of the plate along its local z-axis.
 	 * @param {"stress" | "strain"} state Denotes whether the plate is in a state of plane stress or plane strain.
-	 * @param {boolean} is_meshed Indicates whether the plate is already meshed.
+	 * @param {boolean} isMeshed Indicates whether the plate is already meshed.
 	 */
 	constructor(
 		nodes,
@@ -18,7 +18,7 @@ class Plate {
 		type = 'mindlin',
 		offset = 0,
 		state = 'stress',
-		is_meshed = false
+		isMeshed = false
 	) {
 		this.nodes = nodes;
 		this.thickness = thickness;
@@ -27,7 +27,7 @@ class Plate {
 		this.type = type;
 		this.offset = offset;
 		this.state = state;
-		this.is_meshed = is_meshed;
+		this.isMeshed = isMeshed;
 	}
 }
 
