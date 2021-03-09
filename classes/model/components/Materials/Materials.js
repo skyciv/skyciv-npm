@@ -7,6 +7,8 @@ class Materials extends ModelCollectionComponent {
 	/**
 	 * @description Creates an instance of the SkyCiv Materials class.
 	 * @extends ModelCollectionComponent
+	 * @param {'metric' | 'imperial'} unit_system The unit system which the default materials should follow.
+	 * @param {Object} model Param only used for the model class. Disregard this parameter if using the Materials class separately.
 	 */
 	constructor() {
 		super();
@@ -53,16 +55,20 @@ class Materials extends ModelCollectionComponent {
 	 * @method add
 	 * @memberof Materials
 	 * @param {"Structural Steel" | "Aluminium" | "Carbon Fibre Reinforced Plastic" | "Concrete" | "Concrete High Strength" | "Oakwood" | "Glass"} material The material name.
+	 * @param {"metric" | "imperial"} unit_system Units system for the default materials.
 	 * @returns The ID of the created material.
 	 */
-	add(material) {
-		const name = defaultMaterials[material].name;
-		const density = defaultMaterials[material].density;
-		const elasticity_modulus = defaultMaterials[material].elasticity_modulus;
-		const poissons_ratio = defaultMaterials[material].poissons_ratio;
-		const yield_strength = defaultMaterials[material].yield_strength;
-		const ultimate_strength = defaultMaterials[material].ultimate_strength;
-		const _class = defaultMaterials[material].class;
+	add(material, unit_system = 'metric') {
+		// Get the relevant materials object.
+		const materials = defaultMaterials[unit_system][material];
+
+		const name = materials.name;
+		const density = materials.density;
+		const elasticity_modulus = materials.elasticity_modulus;
+		const poissons_ratio = materials.poissons_ratio;
+		const yield_strength = materials.yield_strength;
+		const ultimate_strength = materials.ultimate_strength;
+		const _class = materials.class;
 
 		const index = this.addCustom(
 			name,

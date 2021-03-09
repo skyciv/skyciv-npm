@@ -3,7 +3,7 @@
 This package provides helpful tools to create objects and interact with the SkyCiv API. These components can be used to quickly construct models by providing code completion, parameter information and examples.
 
 <div style="text-align: center;">
-    <img style="max-width: 800px" src="./img/intellisense.png"/>
+    <img style="max-width: 800px" src="https://github.com/skyciv/skyciv-npm/raw/master/img/intellisense.png"/>
 </div>
 
 The SkyCiv API documentation can be found here: <a href="https://skyciv.com/api/v3/">https://skyciv.com/api/v3/</a>
@@ -163,7 +163,10 @@ model.sections.addLibrarySection(skyciv.sections.Australian_Steel_300_Grade_SHS_
 model.sections.addLibrarySection(skyciv.sections.Australian_Steel_300_Grade_Universal_beams_410_UB_53_7, 1);
 
 // Materials
-model.materials.add('Structural Steel');
+// Provide a second parameter here to indicate if material should be imperial. 
+model.materials.add('Structural Steel'); // If metric
+// model.materials.add('Structural Steel', "imperial"); // If imperial
+// model.materials.add('Structural Steel', model.settings.units.getUnitSystem()); // To use current model units
 
 // Supports
 model.supports.add(45, 'FFFffr');
@@ -232,7 +235,7 @@ const path = skyciv.sections.Australian_Steel_300_Grade_Universal_beams_200_UB_1
 This way, auto-completion helps to avoid looking up section paths manually.
 
 <div style="text-align: center;">
-    <img style="max-width: 800px" src="./img/sections-autocomplete.png"/>
+    <img style="max-width: 800px" src="https://github.com/skyciv/skyciv-npm/raw/master/img/sections-autocomplete.png"/>
 </div>
 
 ----
@@ -283,6 +286,7 @@ Visit the [API docs](https://skyciv.com/api/v3/docs/getting-started) for instruc
 
 | Version  | Breaking          | Description     |
 | :---     | :---              | :---            |
+| 1.2.3    | false | • `Materials.add()` method now takes a second parameter for units. See sample above.
 | 1.2.2    | Breaks `model.self_weight`. | • `Model().set` method now can now accept a downloaded JSON model from platform.skyciv.com/structural.<br/>• Fixed self_weight data structure.<br/>• `Functions` and `Function` class now defaults `args` to an empty object.|
 | 1.2.1    | Breaks `skyciv.section` keys. | • Typos.<br/>• Improved in-code docs.<br/>• Removed special characters from keys in `skyciv.sections`.<br/>• Added `requestPromise()` method to the `ApiObject` class. <br/>• The `request()` and `requestPromise()` method of the `ApiObject()` will now automatically store the `last_session_id` to the `auth.session_id` property of the `ApiObject` instance.<br/>• Added `SelfWeight.enable()` and `SelfWeight.disable()` methods.<br/>• Made all `add()` methods return the ID of the new element. |
 | 1.2.0    | false             | • Added 37 new classes including the ApiObject() and Model() classes.   |

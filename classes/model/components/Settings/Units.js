@@ -161,6 +161,19 @@ class Units {
 		});
 	}
 
+	/**
+	 * @method getUnitSystem
+	 * @memberof Units
+	 * @description Determines the unit system based on the length units.
+	 * @returns {"metric" | "imperial"}
+	 */
+	getUnitSystem() {
+		if (['m', 'mm'].includes(this.length)) {
+			return 'metric';
+		} else {
+			return 'imperial';
+		}
+	}
 }
 
 module.exports = Units;

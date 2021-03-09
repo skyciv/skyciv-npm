@@ -34,7 +34,9 @@ class ModelCollectionComponent {
 			return data;
 		} else {
 			// If no param is provided
-			return clone(this);
+			const cloned = clone(this);
+
+			return cloned;
 		}
 	}
 

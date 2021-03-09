@@ -103,7 +103,7 @@ class Model {
 	/**
 	 * @method set
 	 * @memberof Model
-	 * @description Set individual properties of the model object. 
+	 * @description Set individual properties of the model object.
 	 * @param {SkyCivModelObject} model_object An object of key value pairs
 	 * @example
 	 * const model = new Model()
