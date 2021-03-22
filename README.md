@@ -286,6 +286,7 @@ Visit the [API docs](https://skyciv.com/api/v3/docs/getting-started) for instruc
 
 | Version  | Breaking          | Description     |
 | :---     | :---              | :---            |
+| 2.0.0    | Breaks `model.plates`. | • Plates can now have additional attributes: `diaphragm`, `membrane_thickness`, `bending_thickness`, `shear_thickness`, `holes`. This may misalign inputs of existing plates.<br/>• `plate.type` now defaults to `"auto"`.
 | 1.2.3    | false | • `Materials.add()` method now takes a second parameter for units. See sample above.
 | 1.2.2    | Breaks `model.self_weight`. | • `Model().set` method now can now accept a downloaded JSON model from platform.skyciv.com/structural.<br/>• Fixed self_weight data structure.<br/>• `Functions` and `Function` class now defaults `args` to an empty object.|
 | 1.2.1    | Breaks `skyciv.section` keys. | • Typos.<br/>• Improved in-code docs.<br/>• Removed special characters from keys in `skyciv.sections`.<br/>• Added `requestPromise()` method to the `ApiObject` class. <br/>• The `request()` and `requestPromise()` method of the `ApiObject()` will now automatically store the `last_session_id` to the `auth.session_id` property of the `ApiObject` instance.<br/>• Added `SelfWeight.enable()` and `SelfWeight.disable()` methods.<br/>• Made all `add()` methods return the ID of the new element. |
