@@ -64,6 +64,13 @@ function setAttribs(from, to) {
 						to[collection][id].material_id = secData.material_id;
 					});
 				} else {
+					if (!to.hasOwnProperty(collection)) {
+						if (Array.isArray(from[collection])) { 
+							to[collection] = [];
+						} else {
+							to[collection] = {};
+						}
+					}
 					setAttribs(from[collection], to[collection]);
 				}
 			}
